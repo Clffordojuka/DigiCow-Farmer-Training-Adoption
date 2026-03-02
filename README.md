@@ -23,7 +23,7 @@ Before engineering features, post-modeling EDA revealed exactly why standard app
 
 * **The Insight:** Venn diagrams of the `farmer_name` and `trainer` IDs showed a massive influx of completely new entities in the Test set with zero historical footprint.
 * **The Action:** We could not rely on absolute "Volume" counts (e.g., total past adoptions). Explicitly flagging these as "Cold Starts" also triggered Covariate Shift penalties. Instead, we relied purely on calculated historical *rates* and filled missing entities with the global mean.
-![Discovery B: The Cold Start Matrix](screenshots/cold_start_venn.png)
+![The Cold Start Matrix](screenshots/cold_start_venn.png)
 
 ### Discovery C: The Extreme Class Imbalance Funnel
 
