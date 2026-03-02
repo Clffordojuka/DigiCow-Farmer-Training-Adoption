@@ -1,0 +1,17 @@
+# Ignore all CSV files anywhere in the project
+*.csv
+
+# Ignore everything inside the data folders (highly recommended)
+data/raw/*
+data/processed/*
+
+# Keep the .gitkeep files so the empty folders are still tracked
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Ignore Jupyter Notebook checkpoints
+#.ipynb_checkpoints/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
